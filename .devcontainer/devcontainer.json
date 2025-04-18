@@ -17,7 +17,7 @@
       ]
     }
   },
-  "postCreateCommand": "pip install --upgrade pip && pip install google-adk && curl -sSL https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init",
+  "postCreateCommand": "pip install --upgrade pip && pip install google-adk",
   "mounts": [
     "source=${localEnv:HOME},target=/home/node/,type=bind"
   ]

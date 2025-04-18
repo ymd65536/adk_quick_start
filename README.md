@@ -2,14 +2,12 @@
 ## Setup
 
 ```bash
-pip install google-adk
+curl -sSL https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init
 ```
 
 setup gcloud.
 
 ```bash
-gcloud init
-# gcloud init --skip-diagnostics
 gcloud auth login
 gcloud auth application-default login
 ```
@@ -40,3 +38,9 @@ adk web
 ## Result
 
 ![image](sample.png)`
+
+## (Option) Setup Python package
+
+```bash
+pip install google-adk
+```
